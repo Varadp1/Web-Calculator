@@ -1,0 +1,143 @@
+#MainRectangle{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.452);
+    height: 500px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 30px;
+
+    -webkit-animation: Animation2 5s ease infinite;
+    -moz-animation: Animation2 5s ease infinite;
+    animation: Animation2 5s ease infinite;
+}
+
+#Title{
+    font-family: 'Outfit';
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.452);
+    
+}
+
+#TextArea{
+    height: 25%;
+    background-color: lightseagreen;
+    font-family: 'Outfit';
+    position:relative;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(0, 89, 255), rgb(12, 140, 224),rgb(0, 255, 106));
+    background-size: 200% 200%;
+
+    -webkit-animation: Animation1 5s ease infinite;
+    -moz-animation: Animation1 5s ease infinite;
+    animation: Animation1 5s ease infinite;
+}
+
+#TextArea #Text{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size: 40px;
+    color: ivory;
+    text-shadow: 0px 0px 30px black;
+    padding: 11px;
+    word-break: break-all;
+    transition: opacity 0.5s, font-size 0.4s;
+}
+
+#TextArea #equalsblock{
+    opacity: 0.0;
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size: 40px;
+    color: ivory;
+    text-shadow: 0px 0px 30px black;
+    padding: 11px;
+    word-break: break-all;
+    transition: opacity 0.5s;
+}
+
+#BtnArea{
+    background-color: rgb(162, 255, 250);
+    height: 75%;
+}
+
+#BtnArea .Btn input, #BtnArea .AddBtn input, #BtnArea .SubtractBtn input, #BtnArea .MultiplicationBtn input, #BtnArea .DivisionBtn input, #BtnArea .ClearBtn input, #BtnArea .EqualsBtn input{
+    background-color: rgb(87, 221, 143);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Outfit';
+    font-size: 34px;
+    padding-top: 8px;
+    margin: 10px;
+    margin-left: 15px;
+    box-shadow: 0px 0px 50px rgb(201, 201, 201);
+    border: none;
+    transition: box-shadow 0.5s, background-color 0.2s;
+    cursor: pointer;
+}
+
+#BtnArea .Btn, #BtnArea .AddBtn, #BtnArea .SubtractBtn, #BtnArea .MultiplicationBtn, #BtnArea .DivisionBtn, #BtnArea .ClearBtn, #BtnArea .EqualsBtn{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#BtnArea .Btn input:hover, #BtnArea .AddBtn input:hover, #BtnArea .SubtractBtn input:hover, #BtnArea .MultiplicationBtn input:hover, #BtnArea .DivisionBtn input:hover, #BtnArea .ClearBtn input:hover, #BtnArea .EqualsBtn input:hover{
+    box-shadow: 0px 0px 10px rgb(141, 140, 140);
+}
+
+#BtnArea .AddBtn input, #BtnArea .SubtractBtn input, #BtnArea .MultiplicationBtn input, #BtnArea .DivisionBtn input{
+    background-color: rgb(230, 165, 45);
+}
+
+#BtnArea .ClearBtn input, #BtnArea .EqualsBtn input{
+    background-color: rgb(56, 190, 96);
+}
+
+#BtnArea .Btn input:active, #BtnArea .AddBtn input:active, #BtnArea .SubtractBtn input:active, #BtnArea .MultiplicationBtn input:active, #BtnArea .DivisionBtn input:active, #BtnArea .ClearBtn input:active, #BtnArea .EqualsBtn input:active{
+    background-color: rgb(255, 208, 0);
+}
+
+@-webkit-keyframes Animation1 {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation1 {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation1 { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+@-webkit-keyframes Animation2{
+    0%{box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.452);}
+    25%{box-shadow: 20px 5px 100px rgba(0, 0, 0, 0.452);}
+    50%{box-shadow: 5px 20px 100px rgba(0, 0, 0, 0.452);}
+    75%{box-shadow: -25px 15px 100px rgba(0, 0, 0, 0.452);}
+    100%{box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.452);}
+}
+
+@-moz-keyframes Animation2 {
+    0%{box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.452);}
+    25%{box-shadow: 20px 5px 100px rgba(0, 0, 0, 0.452);}
+    50%{box-shadow: 5px 20px 100px rgba(0, 0, 0, 0.452);}
+    75%{box-shadow: -25px 15px 100px rgba(0, 0, 0, 0.452);}
+    100%{box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.452);}
+}
+@keyframes Animation2 { 
+    0%{box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.452);}
+    25%{box-shadow: 20px 5px 100px rgba(0, 0, 0, 0.452);}
+    50%{box-shadow: 5px 20px 100px rgba(0, 0, 0, 0.452);}
+    75%{box-shadow: -25px 15px 100px rgba(0, 0, 0, 0.452);}
+    100%{box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.452);}
+}
